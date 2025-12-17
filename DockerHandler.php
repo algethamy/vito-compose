@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Vito\Plugins\Vito\Compose;
+namespace App\Vito\Plugins\Algethamy\VitoCompose;
 
 use App\Exceptions\SSHError;
 use App\Models\Site;

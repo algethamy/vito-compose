@@ -5,7 +5,7 @@ namespace Tests\Unit\Compose;
 use App\Facades\SSH;
 use App\Models\Site;
 use App\Plugins\RegisterViews;
-use App\Vito\Plugins\Vito\Compose\DockerHandler;
+use App\Vito\Plugins\Algethamy\VitoCompose\DockerHandler;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Validator;
 use ReflectionMethod;
@@ -113,7 +113,7 @@ class DockerHandlerTest extends TestCase
     public function test_nginx_vhost_contains_docker_proxy_block(): void
     {
         RegisterViews::make('compose')
-            ->path(base_path('app/Vito/Plugins/Vito/Compose/views'))
+            ->path(base_path('app/Vito/Plugins/Algethamy/VitoCompose/views'))
             ->register();
 
         $site = Site::factory()->make([
